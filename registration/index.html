@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="registration.css">
+    <link rel = 'stylesheet' href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>SignUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container-fluid wrapper">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark mb-3 sign-up-card">
+                    <div class="card-header text-white">
+                        <h3>Registration</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <input autocomplete="email" type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col form-floating mb-3" >
+                                    <select class="form-select" id="sex">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                    <label for="sex">&nbsp;&nbsp;&nbsp;Sex</label>
+                                </div>
+
+                                <div class="col form-floating mb-3">
+                                    <input type="date" class="form-control" id="birth_date">
+                                    <label for="birth_date">&nbsp;&nbsp;&nbsp;Date of Birth:</label>
+                                </div>
+                            </div>
+
+                            <div class="card-footer text-center">
+                                <a href="../log%20in/index.html" id="log_in_btn" class="btn-grad">
+                                    SIGN UP
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

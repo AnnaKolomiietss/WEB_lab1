@@ -1,0 +1,110 @@
+body{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(88,110,136,1) 100%);
+    padding: 0 30px 30px;
+}
+
+.logo:after{
+    position: absolute;
+    content: 'YOUR BOOKS';
+    top: 62%;
+    left: 32%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 9px;
+    color: #0c0b0c;
+    white-space: nowrap;
+}
+.logo{
+    position: relative;
+    top: 20px;
+    background: url("Books-2-icon.png");
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    margin: 0 auto;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.books-block{
+    overflow-x: hidden !important;
+    max-width: 96%;
+    margin: 40px auto 0 !important;
+}
+
+.read-books .row .col, .unread-books .row .col{
+    padding: 10px 20px !important;
+}
+
+.top-rate-books .col{
+    min-height: 40px !important;
+}
+.book-label div{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding:  6px 10px;
+    margin-left: 30px !important;
+    background: rgba(248, 248, 248, 0.84);
+}
+
+.top-rate-books .book-label div{
+    margin-left: 0 !important;
+}
+
+.book-label {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.my-account-redirect{
+    padding: 20px;
+}
+.account-btn{
+    color: black !important;
+    border: 2px solid black !important;
+    background: rgba(248, 248, 248, 0.84) !important;
+    outline: none !important;
+    border-radius: 16px !important;
+}
+
+.account-btn:hover{
+    color: #a18b9c !important;
+    border: 2px solid black !important;
+    background: rgba(10, 10, 10, 0.84) !important;
+    outline: none !important;
+    border-radius: 16px !important;
+}
+
+.books-to-read-btn{
+    color: black !important;
+    border: 2px solid black !important;
+    background: rgba(248, 248, 248, 0.84) !important;
+    outline: none !important;
+    border-radius: 16px !important;
+}
+
+.books-to-read-btn:hover{
+    color:  #a18b9c !important;
+    border: 2px solid black !important;
+    background: rgba(0, 0, 0, 0.84) !important;
+    outline: none !important;
+    border-radius: 16px !important;
+}
+
+.my-books-btn{
+    color: black !important;
+    border: 2px solid black !important;
+    background: rgba(248, 248, 248, 0.84)  !important;
+    outline: none !important;
+    border-radius: 16px !important;
+}
+.my-books-btn:hover{
+    color:  #a18b9c !important;
+    border: 2px solid black !important;
+    background: rgba(0, 0, 0, 0.84) !important;
+    outline: none !important;
+    border-radius: 16px !important;
+}

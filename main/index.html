@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel = 'stylesheet' href="../bootstrap/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="my-account-redirect text-end">
+  <a href="../user%20profile/index.html" class="account-btn btn btn-primary">
+    My Account
+  </a>
+</div>
+  <div class="logo"></div>
+
+  <div class ="unread-books books-block" >
+    <div class="book-label text-center">
+      <div>
+        <h4>Books To Read</h4>
+      </div>
+      <button type="button" class="books-to-read-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myBookModal">
+        +
+      </button>
+    </div>
+    <div class="book card bg-dark text-white">
+      <div class="row text-center  border-bottom">
+        <div class="col"><h4>Author</h4></div>
+        <div class="col"><h4>Name</h4></div>
+        <div class="col"><h4>Description</h4></div>
+      </div>
+      <div class="row text-center">
+            <div class="col book-author border-end">
+              gogol
+            </div>
+            <div class="col book-name border-end">
+              revizor
+            </div>
+            <div class="col book-description border-end">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, repudiandae.
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="read-books books-block">
+    <div class="book-label text-center">
+        <div>
+          <h4>My Books</h4>
+        </div>
+        <button type="button" class="my-books-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#myBookModal">
+          +
+        </button>
+    </div>
+
+    <div class="book card bg-dark text-white">
+      <div class="row text-center border-bottom">
+        <div class="col"><h4>Author</h4></div>
+        <div class="col"><h4>Name</h4></div>
+        <div class="col"><h4>Review</h4></div>
+        <div class="col"><h4>Rate</h4></div>
+      </div>
+      <div class="row text-center">
+        <div class="col book-author border-end">
+          gogol
+        </div>
+        <div class="col book-name border-end">
+          revizor
+        </div>
+        <div class="col book-review border-end">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, repudiandae.
+        </div>
+        <div class="col book-rate border-end">
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="top-rate-books books-block">
+    <div class="book-label text-center">
+      <div>
+        <h4>My Top</h4>
+      </div>
+    </div>
+
+    <div class="book card bg-dark text-white">
+      <div class="row text-center border-bottom">
+        <div class="col"><h4>Rate</h4></div>
+        <div class="col"><h4>Author</h4></div>
+        <div class="col"><h4>Name</h4></div>
+      </div>
+      <div class="row text-center">
+        <div class="col book-rate border-end">
+          6
+        </div>
+        <div class="col book-author border-end">
+          gogol
+        </div>
+        <div class="col book-name border-end">
+          revizor
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myBookModal" tabindex="-1" aria-labelledby="myBookModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myBookModalLabel">Add Book</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="row mb-3">
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Author">
+              </div>
+
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <textarea class="form-control" placeholder="Review" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <input type="number" class="form-control" placeholder="Rating" max="10" min="0">
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
